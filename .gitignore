@@ -1,0 +1,80 @@
+# ✅ Ignore les fichiers de logs
+*.log
+logs/
+debug.log
+error.log
+
+# ✅ Ignore les fichiers de compilation et de build
+target/
+out/
+bin/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ✅ Ignore les fichiers de configuration sensibles (important !)
+.env
+.env.local
+.env.production
+.env.development
+application.properties
+application.yml
+application-*.yml
+application-*.properties
+
+# ✅ Ignore les fichiers systèmes (Windows / macOS / Linux)
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ✅ Ignore les fichiers générés par Maven
+.mvn/
+!mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# ✅ Ignore les fichiers de Gradle (si ton projet l'utilise)
+.gradle/
+build/
+.gradle/
+build/
+gradle-app.setting
+
+# ✅ Ignore les fichiers générés par STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans/
+.sts4-cache/
+
+# ✅ Ignore les fichiers spécifiques aux IDE (IntelliJ, Eclipse, VSCode, NetBeans)
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.metadata/
+bin/
+*.class
+*.war
+*.ear
+
+### VS Code ###
+.vscode/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
