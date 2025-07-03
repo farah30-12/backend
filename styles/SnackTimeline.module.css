@@ -1,0 +1,96 @@
+.timelineContainer {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E0 #F7FAFC;
+}
+
+.timelineContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timelineContainer::-webkit-scrollbar-track {
+  background: #F7FAFC;
+  border-radius: 4px;
+}
+
+.timelineContainer::-webkit-scrollbar-thumb {
+  background-color: #CBD5E0;
+  border-radius: 4px;
+}
+
+.timelineLine {
+  position: relative;
+  height: 4px;
+  background-color: #E2E8F0;
+  margin: 80px 0;
+  display: flex;
+  border-radius: 2px;
+}
+
+.timelineSegment {
+  flex: 1;
+  height: 4px;
+  position: relative;
+}
+
+.timelinePoint {
+  position: absolute;
+  top: -28px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timelineIcon {
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.timelineIcon:hover {
+  transform: scale(1.1);
+}
+
+.timelineYear {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40px;
+}
+
+.timelineContent {
+  position: absolute;
+  width: 180px;
+  top: -120px;
+  left: -90px;
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.startEndCircle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -18px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.startEndCircle:hover {
+  transform: scale(1.1);
+}

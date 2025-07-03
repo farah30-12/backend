@@ -1,0 +1,25 @@
+{
+  "stepper": {
+    "firstStep": {
+      "label": "Première étape",
+      "description": "Créer un compte",
+      "content": "Contenu de l'étape 1 : Créer un compte"
+    },
+    "secondStep": {
+      "label": "Deuxième étape",
+      "description": " Vérifier votre adresse mail",
+      "content": "Contenu de l'étape 2 : Vérifier votre adresse mail"
+    },
+    "finalStep": {
+      "label": "Dernière étape",
+      "description": "Obtenir un accès complet",
+      "content": "Contenu de l'étape 3 : Obtenir un accès complet"
+    },
+    "completed": "Terminé, cliquez sur le bouton de retour pour revenir à l'étape précédente"
+  },
+  "sendValidationEmail": "Envoyer un e-mail de validation",
+  "we_have_sent_you_an_email": "Nous vous avons envoyé un courriel pour vérifier votre compte. Veuillez vérifier votre boîte de réception.",
+  "try_again": "Réessayez",
+  "validation_with_success": "Votre compte a été validé avec succès. Vous serez redirigé vers votre tableau de bord dans quelques secondes.",
+  "something_went_wrong": "Oups ! Quelque chose s'est mal passé. Veuillez réessayer plus tard ou contacter le support pour obtenir de l'aide."
+}

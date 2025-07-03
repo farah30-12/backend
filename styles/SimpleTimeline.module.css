@@ -1,0 +1,61 @@
+.timelineContainer {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.timelineLine {
+  position: relative;
+  height: 4px;
+  background-color: #E2E8F0;
+  margin: 60px 0;
+  display: flex;
+}
+
+.timelineSegment {
+  flex: 1;
+  height: 4px;
+  position: relative;
+}
+
+.timelinePoint {
+  position: absolute;
+  top: -28px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timelineIcon {
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timelineYear {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40px;
+}
+
+.timelineContent {
+  position: absolute;
+  width: 180px;
+  top: -120px;
+  left: -90px;
+  background-color: white;
+}
+
+.startEndCircle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -18px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
