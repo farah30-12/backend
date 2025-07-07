@@ -1,0 +1,192 @@
+/* Styles personnalisés pour le calendrier */
+
+/* Style général du calendrier */
+.rbc-calendar {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* En-tête du calendrier */
+.rbc-toolbar {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.rbc-toolbar button {
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #228be6;
+  color: white;
+  border-color: #228be6;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #e9ecef;
+}
+
+.rbc-toolbar button.rbc-active:hover {
+  background-color: #1c7ed6;
+}
+
+/* En-tête des jours de la semaine */
+.rbc-header {
+  padding: 10px 5px;
+  font-weight: 500;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Cellules du calendrier */
+.rbc-month-view .rbc-day-bg {
+  transition: background-color 0.2s ease;
+}
+
+.rbc-month-view .rbc-day-bg:hover {
+  background-color: #f1f3f5;
+}
+
+.rbc-month-view .rbc-off-range-bg {
+  background-color: #f8f9fa;
+}
+
+.rbc-month-view .rbc-today {
+  background-color: #e7f5ff;
+}
+
+/* Événements */
+.rbc-event {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 4px 6px;
+}
+
+.rbc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.rbc-event-label {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.rbc-event-content {
+  font-size: 0.9em;
+}
+
+/* Vue agenda */
+.rbc-agenda-view table.rbc-agenda-table {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  font-weight: 500;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Vue semaine et jour */
+.rbc-time-view {
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rbc-time-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.rbc-time-content {
+  border-top: 1px solid #e9ecef;
+}
+
+.rbc-time-slot {
+  border-top: 1px solid #f1f3f5;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #f1f3f5;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Popup "Voir plus" */
+.rbc-overlay {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.rbc-overlay-header {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  font-weight: 500;
+}
+
+/* Styles pour les différentes priorités */
+.priority-high {
+  border-left: 4px solid #fa5252 !important;
+}
+
+.priority-medium {
+  border-left: 4px solid #fd7e14 !important;
+}
+
+.priority-low {
+  border-left: 4px solid #40c057 !important;
+}
+
+/* Styles pour les différents statuts */
+.status-todo {
+  background-color: #228be6 !important;
+}
+
+.status-in-progress {
+  background-color: #fd7e14 !important;
+}
+
+.status-done {
+  background-color: #40c057 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .rbc-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rbc-toolbar .rbc-toolbar-label {
+    margin: 10px 0;
+  }
+  
+  .rbc-toolbar .rbc-btn-group {
+    margin-bottom: 10px;
+  }
+}

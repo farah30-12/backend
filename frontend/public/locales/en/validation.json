@@ -1,0 +1,25 @@
+{
+  "stepper": {
+    "firstStep": {
+      "label": "First step",
+      "description": "Create an account",
+      "content": "Step 1 content: Create an account"
+    },
+    "secondStep": {
+      "label": "Second step",
+      "description": "Verify email",
+      "content": "Step 2 content: Verify email"
+    },
+    "finalStep": {
+      "label": "Final step",
+      "description": "Get full access",
+      "content": "Step 3 content: Get full access"
+    },
+    "completed": "Completed, click back button to get to the previous step"
+  },
+  "sendValidationEmail": "Send Validation Email",
+  "we_have_sent_you_an_email": "We have sent you an email to verify your account. Please check your inbox.",
+  "try_again": "Try Again",
+  "validation_with_success": "Your account has been successfully validated. You will be redirected to your dashboard after a few seconds.",
+  "something_went_wrong": "Oops! Something went wrong. Please try again later or contact support for assistance."
+}
